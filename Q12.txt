@@ -1,0 +1,18 @@
+12.  O que é um ponteiro para uma função? Pesquise na Internet referências sobre o assunto e escreva um pequeno programa exemplificando o uso deste recurso.
+	Em síntese, a utilização de ponteiros como forma de manipular funções em C auxilia no processo de definição de qual função será executada no programa. Isto é, ao usar os ponteiros, não será necessário escrever várias vezes no código o nome da função desejada. Então, assim como pode-se aplicar os ponteiros para "resgatar" variáveis, isso também pode ser feito de forma semelhante com as funções. Logo, basta definir o tipo do ponteiro, que deverá ser igual ao da função, além de aplicar se essa tem parâmetros sim ou não.
+
+Exemplo: 
+int soma(int x, int y){
+ int soma = x+y;
+ return soma;
+}
+int main(void) {
+ int (*ponteirofuncao)(int, int);
+ int resultado;
+ 
+ponteirofuncao = soma;
+resultado = ponteirofuncao(95, 16);
+printf("\nResultado da soma: %d", resultado);
+ 
+return 0;
+}

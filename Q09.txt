@@ -1,0 +1,33 @@
+9. O que fazem os seguintes programas em C?
+
+	#include <stdio.h>
+ 
+	int main(void) {
+  	int vet[] = {4,9,13};
+  	int i;
+  	for(i=0;i<3;i++){
+   	 printf("%d ", *(vet+i));
+   	}
+ 
+ 	return 0;
+	}	
+ 
+No primeiro caso, primeiro ocorre a declaração do vetor e dos respectivos valores (4, 9, 13), assim como também da variável e i que será usado como contador. Então, é percorrido as posições do vetor “vet”, por meio do laço de repetição, mostrando o conteúdo que está presente em cada um.  
+
+	#include <stdio.h>
+	 
+	int main(void) {
+  	int vet[] = {4,9,13};
+ 	 int i;
+ 	 for(i=0;i<3;i++){
+   	 printf("%X ", vet+i);
+   	}
+ 
+ 	return 0;
+	}
+
+Já no segundo caso, ocorre também a declaração dos valores do vetor, como já foi citado acima. Em seguida, através da utilização do for, estão sendo exibidos os endereços de memória de cada posição do vetor.
+ 
+
+
+

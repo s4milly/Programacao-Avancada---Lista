@@ -1,0 +1,13 @@
+8. Considerando a declaração int mat[4], *p, x; quais das seguintes expressões são válidas? Justifique.
+
+- p = mat + 1;
+Válida, pois o ponteiro está recebendo a posição do vetor (mat) mais um, ou seja, um posição à frente. 
+
+- p = mat`;
+Inválida, haja vista que ponteiro não pode receber incremento direto;
+
+- p =`mat; 
+Inválida, semelhante ao caso acima.
+
+- x = (*mat);  
+Válida, pois x irá receber o conteúdo de mat.

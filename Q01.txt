@@ -1,0 +1,3 @@
+1. Qual a utilidade do aprendizado do uso de ponteiro para aplicações em engenharia? 
+	
+	Os ponteiros são ferramentas muito importantes, tendo em vista que esta pode armazenar o endereço de memória de variáveis que possuem determinadas informações. Por isso, a sua utilização é indispensável em diversos projetos de construção e desenvolvimento de softwares na área da da engenharia, já que os ponteiros facilitam a implementação de certos dados, em especial, quando esses se repetem muito. Dessa forma, essa ferramenta promove a otimização do código, deixando-o mais organizado e menos repetitivo, facilitando, assim, a vida do próprio desenvolvedor.

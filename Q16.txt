@@ -1,0 +1,19 @@
+16. Procure na internet mecanismos que possibilitem medir tempos de execução de rotinas computacionais. Geralmente, estas medidas são realizadas com o auxílio de funções em C que lêem a hora no sistema (sistemas Unix e Windows geralmente usam funções diferentes). Utilizando os conhecimentos que você obteve com sua pesquisa, meça os tempos de execução das implementações que você criou para os dois problemas de ordenação anteriores e compare os resultados obtidos. 
+
+Tempo de Execução da Questão 14 (em milisegundos):
+Tempo de execução: 0.454000
+ 
+
+Tempo de Execução da Questão 15 (em milisegundos):
+Tempo de execução: 0.440000
+ 
+Comparando os resultados, percebe-se que o tempo de execução dos dois códigos foi bastante semelhante, tendo uma diferença muito pequena. Contudo, é notório que o da Questão 15, o qual foi utilizado ponteiros para função, foi executado em um menor período, mostrando a eficiência dessa ferramenta. 
+
+Comandos Utilizados: 
+
+clock_t inicio = clock(); //colocado no início do código
+clock_t fim = clock(); // colocado no fim do código
+double tempo = (double) (fim - inicio)/ (CLOCKS_PER_SEC/1000); // o tempo medido será a diferença de tempo entre o início e o fim da execução
+printf("\nTempo de execução: %f", tempo); // Escrevendo o tempo
+
+obs.: precisa utilizar a biblioteca time.h;

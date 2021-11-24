@@ -1,0 +1,90 @@
+5. Determine o que será mostrado pelo seguinte programa (compile-o, execute-o e verifique se foram obtidas as respostas esperadas).
+
+	/* (a) */
+  	valor = 10; 	
+  	p1 = &valor; 	
+ 	*p1 = 20; 			
+ 	printf("%d \n", valor);   
+
+a. A resposta foi a esperada, pois, na linha 18, por meio da utilização do ponteiro “p1” é atualizado o inteiro contido na variável “valor” (sendo agora a resposta igual a 20).
+
+	/* (b) */
+ 	temp = 26.5;
+	p2 = &temp;	
+  	*p2 = 29.0;
+	printf("%.1f \n", temp);
+
+b. Semelhante à questão anterior, o valor guardado na variável “temp” foi atualizado por meio da utilização de um ponteiro, nesse caso “p2”, trocando o valor 26,5 por 29,0.
+	
+	/* (c) */
+ 	p3 = &nome[0];  		
+ 	aux = *p3;
+ 	printf("%c \n", aux);
+
+c. Nesta questão, é impressa o carácter que está presente na posição 0 da string “nome”, com a ajuda do ponteiro “p3” que guardou o endereço da variável, além do “aux” que coletou o valor que estava presente naquele endereço(no caso, o  char ‘P’). 
+
+	/* (d) */
+  	p3 = &nome[4];	
+ 	aux = *p3;	
+ 	printf("%c \n", aux);
+
+d. Assim como no caso anterior, nesse acontece a coleta do endereço do caractere que está na posição 4 da string “nome”,  através do do ponteiro “p3” e também leitura do que está presente lá (o char ‘e’).
+
+	/* (e) */
+ 	p3 = nome;	
+ 	printf("%c \n", *p3);	
+
+e. Nesse caso, foi feita a leitura do primeiro carácter presente na string, sendo  esse o ‘P’, com a ajuda do ponteiro.
+
+ 	/* (f) */
+ 	p3 = p3 + 4;	
+ 	printf("%c \n", *p3);
+
+f. Já nessa alternativa, é feito a navegação entre as posições da string por intermédio da implementação de bytes, que nesse caso foram 4, pulando do carácter que estava na posição 4, o ‘e’.
+
+	/* (g) */
+ 	p3--;	
+ 	printf("%c \n", *p3);
+
+g. Considerando a alternativa anterior, é feito o decremento de uma posição do ponteiro, indo do carácter ‘e’ para o carácter ‘t’, da palavra “Ponteiros”.
+	/* (h) */
+ 	vetor[0] = 31;	
+ 	vetor[1] = 45;	
+ 	vetor[2] = 27;	
+  	p4 = vetor;
+	idade = *p4;	
+ 	printf("%d \n", idade);
+
+h. Nesta é feita a implantação do vetor, e ao passar o conteúdo desse vetor para um ponteiro “p4”, sem especificar uma posição, é inicializado da posição 0, a qual contém o inteiro 31.  Assim, a variável “idade” receberá esse valor.
+
+	/* (i) */
+  	p5 = p4 + 1;	
+ 	idade = *p5;	
+ 	printf("%d \n", idade);
+
+i. Em seguida, quando o ponteiro “p5” receber “p4” mais um, quer dizer que este irá receber endereço com a posição seguinte do vetor, e a variável idade receberá o conteúdo do endereço, o qual é 45.
+	/* (j) */
+ 	p4 = p5 + 1;			
+  	idade = *p4;	
+  	printf("%d \n", idade);	
+
+j. Aqui o ponteiro “p4” recebe o endereço de “p5” mais um, ou seja, o endereço da posição seguinte a que está presente no “p5”, sendo que “idade” irá receber o inteiro que está guardado, o qual é o número 27.  
+
+	/* (l) */ 
+  	p4 = p4 - 2;
+   	idade = *p4;  
+ 	printf("%d \n", idade);
+
+l. Já nessa, o ponteiro “p4” irá regressar a duas posições em relação à sua atual, referenciando agora ao endereço que contém o inteiro 31. 
+
+	  /* (m) */  
+ 	p5 = &vetor[2] - 1; 
+  	printf("%d \n", *p5);
+
+m. Neste caso, o ponteiro “p5” irá receber o endereço da posição 2 do vetor e decrementar um byte, ou seja, receberá o endereço da posição 1 do vetor, a qual contém o inteiro 45.
+
+  	/* (n) */ 
+  	p5`; 
+  	printf("%d \n", *p5);
+ 
+n. Por fim, nesse é incrementado 1 byte a posição do ponteiro "p5", imprimindo esta, o qual contém o inteiro 27. 

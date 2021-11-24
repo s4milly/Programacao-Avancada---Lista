@@ -1,0 +1,61 @@
+10.  Seja x um vetor de 4 elementos, declarado da forma TIPO x[4]. Suponha que depois da declaração, X esteja armazenado no endereço de memória 4092 (ou seja, o endereço de x[0]). Suponha também que na máquina seja usada uma variável do tipo char ocupa 1 byte, do tipo int ocupa 2 bytes, do tipo float ocupa 4 bytes e do tipo double ocupa 8 bytes. Quais serão os valores de x+1, x+2 e x+3 se:
+
+- x for declarado como char?
+Resultado: x+1 = 4093; x+2 =4094; x+3 = 4095.  
+
+#include <stdio.h>
+int main(void) {
+ char x[4];
+  for(int i=0; i<4; i++){
+   printf("\n%x", x+i);
+	
+ // x+1 = a38fcf39
+//  x+2 = a38fcf3a
+//  x+3 = a38fcf3b
+ }
+}
+
+- x for declarado como int? 
+Resultado: x+1 = 4094; x+2 =4096; x+3 = 4098.  
+
+#include <stdio.h>
+int main(void) {
+ int x[4];
+  for(int i=0; i<4; i++){
+   printf("\n%x", x+i);
+	
+ // x+1 = 98e08284
+ //  x+2 = 98e08288
+//  x+3 = 98e0828c
+ }
+}
+
+- x for declarado como float?
+Resultado: x+1 = 4096; x+2 =409A; x+3 = 409E.  
+	
+#include <stdio.h>
+int main(void) {
+ float x[4];
+  for(int i=0; i<4; i++){
+   printf("\n%x", x+i);
+	
+ // x+1 = 4b5299e4
+//  x+2 = 4b5299e8
+//  x+3 = 4b5299ec
+ }
+}
+ - x for declarado como double? 
+Resultado: x+1 = 409A; x+2 =40A2; x+3 = 40AA.  
+	
+#include <stdio.h>
+int main(void) {
+ float x[4];
+  for(int i=0; i<4; i++){
+   printf("\n%x", x+i);
+	
+ // x+1 = a9c2b628
+//  x+2 = a9c2b630
+//  x+3 = a9c2b638
+ }
+}
+

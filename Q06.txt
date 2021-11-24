@@ -1,0 +1,34 @@
+6.  Determine o que será mostrado pelo seguinte programa (compile-o, execute-o e verifique se foram obtidas as respostas esperadas).
+
+Será exibido para cada uma das posições do vetor criado o valor que está contido na determinada posição, em uma contagem de 0 a 4, tanto através da  utilização direta do vetor como também utilizando o ponteiro que recebeu o endereço e que está sendo implementado a cada laço de repetição. Além disso, também será escrito o endereço daquele vetor, retirando diretamente do vetor (usando o “&”), assim como também usando o ponteiro. Dessa forma, serão registrados os seguintes resultados: 
+
+contador/valor/valor/endereco/endereco
+i = 0
+vet[0] = 1.1
+*(f + 0) = 1.1
+&vet[0] = e979a070
+(f + 0) = e979a070
+ 
+i = 1
+vet[1] = 2.2
+*(f + 1) = 2.2
+&vet[1] = e979a074
+(f + 1) = e979a074
+ 
+i = 2
+vet[2] = 3.3
+*(f + 2) = 3.3
+&vet[2] = e979a078
+(f + 2) = e979a078
+ 
+i = 3
+.vet[3] = 4.4
+*(f + 3) = 4.4
+&vet[3] = e979a07c
+(f + 3) = e979a07c
+ 
+i = 4
+vet[4] = 5.5
+*(f + 4) = 5.5
+&vet[4] = e979a080
+(f + 4) = e979a080
